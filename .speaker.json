@@ -1,0 +1,10 @@
+{
+    "directoryName": "visual-testing",
+    "projectName": "visual-testing",
+    "projectDescription": "🔍 🕵🏼  ‍♀️Visual testing - Ou comment détecter les changements au pixel près dans votre application",
+    "projectAuthorsTwitter": "@AurelienLoyer",
+    "types": [
+        "slides"
+    ],
+    "gitinit": true
+}
