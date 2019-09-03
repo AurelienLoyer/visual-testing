@@ -1,0 +1,115 @@
+// Apply mobile css rules if we are under $mobile-max-width OR if we are in orientation portrait (IPad width is over $mobile-max-width)
+@media screen and (max-width: $mobile-max-width), screen and (orientation: portrait) {
+    .app-button > * {
+        &.hero-red {
+            &:active {
+                background-color: $red-hover;
+            }
+
+            &:not(:active) {
+                background-color: $red;
+            }
+        }
+
+        &.hero-blue {
+            &:active {
+                background-color: $midnight-100;
+            }
+
+            &:not(:active) {
+                background-color: $ocean;
+            }
+        }
+
+        &.hollow {
+            &:active {
+                background-color: $midnight-100;
+                color: $white;
+            }
+
+            &:not(:active) {
+                color: $midnight-100;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.app-button > * {
+    border: 0px;
+    border-radius: 22px;
+    height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500 !important;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    width: 200px;
+    outline-style: none !important;
+    cursor: pointer;
+
+    &.hero-red {
+        background-color: $red;
+        color: $white;
+
+        &:hover,
+        &:active {
+            background-color: $red-hover;
+        }
+    }
+
+    &.hero-blue {
+        background-color: $ocean;
+        color: $white;
+
+        &:hover,
+        &:active {
+            background-color: $midnight-100;
+        }
+    }
+
+    &.hero {
+        &:disabled,
+        &[disabled] {
+            background-color: $midnight-010;
+            color: $midnight-035;
+        }
+    }
+
+    &.hollow {
+        color: $midnight-100;
+        border: solid 2px $midnight-100;
+        background-color: transparent;
+
+        &:hover,
+        &:active {
+            background-color: $midnight-100;
+            color: $white;
+        }
+
+        &:disabled,
+        &[disabled] {
+            background-color: transparent;
+            color: $midnight-035;
+            border: solid 2px $midnight-035;
+        }
+    }
+
+    &.small {
+        border-radius: 15px;
+        font-size: 10px !important;
+        height: 30px;
+    }
+
+    &.medium {
+        border-radius: 18px;
+        font-size: 12px !important;
+        height: 36px;
+    }
+
+    &.large {
+        font-size: 12px !important;
+    }
+}
