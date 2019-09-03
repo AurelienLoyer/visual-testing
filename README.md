@@ -1,6 +1,6 @@
-# visual-testing
+# Visual Testing
 
-🔍 🕵🏼  ‍♀️Visual testing - Ou comment détecter les changements au pixel près dans votre application
+🔍 🕵🏼  ️Visual testing - Ou comment détecter les changements au pixel près dans votre application
 
 ## Slides
 
