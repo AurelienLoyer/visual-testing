@@ -1,39 +1,5 @@
 // Apply mobile css rules if we are under $mobile-max-width OR if we are in orientation portrait (IPad width is over $mobile-max-width)
-@media screen and (max-width: $mobile-max-width), screen and (orientation: portrait) {
-    .app-button > * {
-        &.hero-red {
-            &:active {
-                background-color: $red-hover;
-            }
 
-            &:not(:active) {
-                background-color: $red;
-            }
-        }
-
-        &.hero-blue {
-            &:active {
-                background-color: $midnight-100;
-            }
-
-            &:not(:active) {
-                background-color: $ocean;
-            }
-        }
-
-        &.hollow {
-            &:active {
-                background-color: $midnight-100;
-                color: $white;
-            }
-
-            &:not(:active) {
-                color: $midnight-100;
-                background-color: transparent;
-            }
-        }
-    }
-}
 
 .app-button > * {
     border: 0px;
@@ -111,5 +77,40 @@
 
     &.large {
         font-size: 12px !important;
+    }
+}
+@media screen and (max-width: $mobile-max-width), screen and (orientation: portrait) {
+    .app-button > * {
+        &.hero-red {
+            &:active {
+                background-color: $red-hover;
+            }
+
+            &:not(:active) {
+                background-color: $red;
+            }
+        }
+
+        &.hero-blue {
+            &:active {
+                background-color: $midnight-100;
+            }
+
+            &:not(:active) {
+                background-color: $ocean;
+            }
+        }
+
+        &.hollow {
+            &:active {
+                background-color: $midnight-100;
+                color: $white;
+            }
+
+            &:not(:active) {
+                color: $midnight-100;
+                background-color: transparent;
+            }
+        }
     }
 }
