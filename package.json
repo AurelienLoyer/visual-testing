@@ -8,7 +8,8 @@
 	"scripts": {
 		"start": "npm run generate:slides",
 		"generate:slides": "speaker-cli generate --slides",
-		"watch:slides": "speaker-cli generate --slides --watch"
+		"watch:slides": "speaker-cli generate --slides --watch",
+		"project:build:storybook": "cd projects/angular-app && npm install && npm run build-storybook"
 	},
 	"author": "@AurelienLoyer",
 	"license": "MIT",
